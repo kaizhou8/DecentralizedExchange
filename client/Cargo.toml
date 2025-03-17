@@ -1,0 +1,28 @@
+[package]
+name = "solana_rust_dex_client"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "Client library for the Solana Rust DEX"
+license = "MIT"
+
+[dependencies]
+solana-client = "1.17.0"
+solana-program = "1.17.0"
+solana-sdk = "1.17.0"
+solana-rust-dex = { path = ".." }
+spl-token = "4.0.0"
+spl-associated-token-account = "2.2.0"
+thiserror = "1.0.50"
+borsh = "0.10.3"
+borsh-derive = "0.10.3"
+clap = "2.33.3"
+solana-clap-utils = "1.17.0"
+
+[[bin]]
+name = "solana-dex-cli"
+path = "src/main.rs"
+
+[lib]
+name = "solana_rust_dex_client"
+path = "src/lib.rs" 
